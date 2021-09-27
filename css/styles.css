@@ -280,7 +280,7 @@ li.item {
   border-radius: 4px;
 }
 .features .item:nth-child(1)::before {
-  background-image: url('../images/antena.svg');
+  background-image: url('../images/svg/antena.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
