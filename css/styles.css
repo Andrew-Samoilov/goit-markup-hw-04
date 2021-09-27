@@ -267,6 +267,23 @@ li.item {
 .features.section {
   padding-bottom: 0;
 }
+/* фон під значком */
+.features .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.features .item:nth-child(1)::before {
+  background-image: url('../images/antena.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* кнопки в фильтре */
 .filter {
