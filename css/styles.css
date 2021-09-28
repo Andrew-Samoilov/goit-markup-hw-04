@@ -169,6 +169,9 @@ button {
   font-weight: normal;
 }
 /* секція команда */
+.team {
+  background-color: #f5f4fa;
+}
 .team-image {
   margin-bottom: 30px;
 }
@@ -191,6 +194,7 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
 }
 /* footer */
 .footer {
@@ -358,4 +362,23 @@ li.item {
 }
 .site-contact {
   margin-left: auto;
+}
+/* клиенты секция */
+.clients .item {
+  flex-basis: calc(100% / 6 - 30px);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px; */
+}
+.clients .item:focus,
+.clients .item:active,
+.clients .item:hover {
+  border-color: var(--accent);
 }
