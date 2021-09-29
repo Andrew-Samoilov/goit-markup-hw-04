@@ -120,6 +120,11 @@ button {
   margin-right: 50px;
 }
 
+.header-item a{
+  align-items: center;
+  display: flex;
+}
+
 .site-nav .link:focus,
 .site-nav .link:hover,
 .site-nav .link.current,
@@ -361,6 +366,7 @@ li.item {
 }
 .site-contact {
   margin-left: auto;
+
 }
 /* клиенты секция */
 .clients .item {
@@ -391,4 +397,9 @@ li.item {
   justify-content: center;
   align-items: center;
   height: 92px;
+}
+
+.header-icon{
+  fill: currentColor;
+  margin-right: 10px;
 }
