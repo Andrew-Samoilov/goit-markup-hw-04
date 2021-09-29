@@ -271,22 +271,20 @@ li.item {
 .features.section {
   padding-bottom: 0;
 }
+
+.futures-icon {
+  width: 70px;
+  height: 70px;
+}
 /* фон під значком */
-.features .item::before {
-  display: block;
-  content: '';
+.icon-bgr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  background-size: contain;
-  /* background-repeat: no-repeat;
-  background-position: center; */
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-.features .item:nth-child(1)::before {
-  background-image: url('../images/svg/antena.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* кнопки в фильтре */
