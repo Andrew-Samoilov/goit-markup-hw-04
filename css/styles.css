@@ -196,13 +196,13 @@ button {
   text-align: center;
   /* padding-bottom: 16px; */
 }
-.team-border {
+/* .team-border {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   padding-bottom: 30px;
-}
+} */
 /* footer */
 .footer {
   background-color: var(--background-color);
@@ -294,9 +294,21 @@ li.item {
 .work .item {
   flex-basis: calc(100% / 3 - 30px);
 }
-.features .item,
-.team .item {
+.features .item{
   flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: var(--white-color);
+padding-bottom: 30px;
+}
+.team-item{
+  flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: var(--white-color);
+padding-bottom: 30px;
 }
 
 /* секция особенности features*/
@@ -397,7 +409,6 @@ li.item {
 }
 .site-contact {
   margin-left: auto;
-
 }
 /* клиенты секция */
 .clients .item {
@@ -406,9 +417,13 @@ li.item {
   box-sizing: border-box;
   border-radius: 4px;
   align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+
   color: #afb1b8;
+  
+  display: flex;
+  justify-content: center;
+  height: 92px;
+
 }
 .clients .item:focus,
 .clients .item:active,
@@ -423,13 +438,6 @@ li.item {
   fill: currentColor;
 }
 
-.clients-icon-bgr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 92px;
-}
-
 .header-icon{
   fill: currentColor;
   margin-right: 10px;
@@ -441,10 +449,7 @@ li.item {
   padding-left: 32px;
   padding-right: 32px;
 }
-.sosial-list .item{
-  margin: 0;
-  padding: 0;
-}
+
 .sosial-bgr{
   width: 44px;
   height: 44px;
@@ -456,16 +461,18 @@ li.item {
   color: var(--secondary-color);
 }
 
-.sosial-list .item:not(:last-child){
-margin-right: 10px;
-}
-
 .sosial-icon{
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
+.sosial-bgr:focus,
+.sosial-bgr:active,
 .sosial-bgr:hover{
   background-color: var(--accent);
   color: var(--white-color);
+}
+
+.sosial-item:not(:last-child){
+  margin-right: 10px;
 }
